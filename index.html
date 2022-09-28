@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web10</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <img src="menu.png" class="menu">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Mordern</a></li>
+                <li><a href="">Contamporary</a></li>
+                <li><a href="">Gallary</a></li>
+            </ul>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-cont">
+            <img src="lamp.png" class="lamp">
+            <img src="light.png" class="light" id="light">
+        </div>
+        <div class="text">
+            <h1>Latest <br> in Lighting</h1>
+            <p>Messages is an SMS, RCS, and instant messaging application developed by Google</p>
+            <a href="">Cleck here</a>
+        </div>
+
+    </div>
+
+    <script>
+        let btn=document.getElementById("btn");
+        let light=document.getElementById("light");
+       
+        function togglebtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+
+
+        }
+
+        
+    </script>
+    
+</body>
+</html>
